@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Rebel Spirit: The Courage to Question and Grow",
+    "slug": "rebel-spirit",
+    "author": "Abundant Deepak",
+    "description": "What if rebellion isn\u2019t about defiance but honesty? Rebel Spirit invites readers to question inherited beliefs, explore deeper truths, and rebuild a life guided by authenticity rather than approval.",
+    "blurb": "A quiet, courageous invitation to awaken beyond old systems.",
+    "retail_links": {
+      "IngramSpark": "#",
+      "Amazon": "#",
+      "Books2Read": "https://www.books2read.com/AbundantDeepak"
+    },
+    "cover_image": "/static/uploads/rebel-spirit-cover.jpg",
+    "status": "published",
+    "featured": true
+  },
+  {
+    "title": "Becoming the Light You Are",
+    "slug": "becoming-the-light-you-are",
+    "author": "Abundant Deepak",
+    "description": "An invitation to remember your quiet brilliance. Blending soulful reflections with gentle practices, this book guides you toward awakening the luminous presence within.",
+    "blurb": "Awaken. Remember. Shine.",
+    "retail_links": {
+      "IngramSpark": "#",
+      "Amazon": "#",
+      "Books2Read": "https://www.books2read.com/AbundantDeepak"
+    },
+    "cover_image": "/static/uploads/becoming-the-light-cover.jpg",
+    "status": "draft",
+    "featured": false
+  }
+]

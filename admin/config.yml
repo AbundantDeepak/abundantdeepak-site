@@ -1,0 +1,54 @@
+
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "static/uploads"
+public_folder: "/static/uploads"
+
+collections:
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - file: "content/settings.json"
+        label: "Settings"
+        name: "settings"
+        fields:
+          - {label: "Site Title", name: "site_title", widget: "string"}
+          - {label: "Tagline", name: "tagline", widget: "string"}
+          - {label: "Author", name: "author", widget: "string"}
+          - {label: "Contact Email", name: "contact_email", widget: "string"}
+          - {label: "Books2Read URL", name: "books2read_url", widget: "string"}
+          - {label: "Newsletter Provider", name: "newsletter_provider", widget: "string"}
+
+  - name: "books"
+    label: "Books"
+    label_singular: "Book"
+    editor:
+      preview: false
+    files:
+      - file: "content/books.json"
+        label: "Books List"
+        name: "books"
+        fields:
+          - label: "Books"
+            name: "items"
+            widget: "list"
+            collapsed: true
+            add_to_top: true
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Slug", name: "slug", widget: "string"}
+              - {label: "Author", name: "author", widget: "string", default: "Abundant Deepak"}
+              - {label: "Description", name: "description", widget: "text"}
+              - {label: "Blurb", name: "blurb", widget: "string"}
+              - label: "Retail Links"
+                name: "retail_links"
+                widget: "object"
+                fields:
+                  - {label: "Books2Read", name: "Books2Read", widget: "string", required: false}
+                  - {label: "Amazon", name: "Amazon", widget: "string", required: false}
+                  - {label: "IngramSpark", name: "IngramSpark", widget: "string", required: false}
+              - {label: "Cover Image", name: "cover_image", widget: "image"}
+              - {label: "Status", name: "status", widget: "select", options: ["published","draft","archived"], default: "draft"}
+              - {label: "Featured", name: "featured", widget: "boolean", default: false}
